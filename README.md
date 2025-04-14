@@ -3,6 +3,12 @@ Head over to your databricks workspace.
 Click your profile > Settings > Developer > Access Tokens [Manage]
 Create an access token, this will be your `DATABRICKS_TOKEN`. Save the token in a secure way.
 
+### Storing DATABRICKS_TOKEN
+On Mac: 
+- store: `security add-generic-password -a <user-email> -s <name-for-service>`
+- retrieve `export DATABRICKS_TOKEN=$(security find-generic-password -s <name-for-service> -w -g`
+
+
 ```bash
 uv sync
 databricks configure -t <DATABRICKS_TOKEN>
