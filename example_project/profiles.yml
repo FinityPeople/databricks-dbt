@@ -1,0 +1,11 @@
+example_project:
+  outputs:
+    local:
+      catalog: sales
+      host: adb-215728996978296.16.azuredatabricks.net
+      # serverless sql warehouse
+      http_path: /sql/1.0/warehouses/9bb0596771adff86
+      threads: 1
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      type: databricks
+  target: local
