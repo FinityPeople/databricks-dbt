@@ -1,0 +1,17 @@
+[project]
+name = "example-project"
+version = "0.1.0"
+description = "example dbt project"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[dependency-groups]
+dev = [
+    "dbt-core>=1.7.19",
+    "dbt-spark>=1.9.0, <2.0",
+    "dbt-databricks>=1.7.3",
+    "databricks-cli>=0.18.0",
+    "chispa>=0.11.1",
+]
